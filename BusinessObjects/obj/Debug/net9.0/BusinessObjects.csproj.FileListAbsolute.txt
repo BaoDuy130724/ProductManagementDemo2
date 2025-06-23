@@ -1,0 +1,14 @@
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\bin\Debug\net9.0\BusinessObjects.deps.json
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\bin\Debug\net9.0\BusinessObjects.dll
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\bin\Debug\net9.0\BusinessObjects.pdb
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.AssemblyInfo.cs
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.dll
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\refint\BusinessObjects.dll
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.pdb
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\ref\BusinessObjects.dll
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\bin\Debug\net9.0\BusinessObjects.runtimeconfig.json
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.csproj.AssemblyReference.cache
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.genruntimeconfig.cache
