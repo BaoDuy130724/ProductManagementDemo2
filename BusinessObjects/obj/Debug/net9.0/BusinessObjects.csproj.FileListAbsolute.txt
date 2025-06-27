@@ -12,3 +12,4 @@ E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\n
 E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\bin\Debug\net9.0\BusinessObjects.runtimeconfig.json
 E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.csproj.AssemblyReference.cache
 E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.genruntimeconfig.cache
+E:\FPT\SU2025\PRN212\Projects\ProductManagementDemo2\BusinessObjects\obj\Debug\net9.0\BusinessObjects.sourcelink.json

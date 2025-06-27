@@ -5,16 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp"
         mc:Ignorable="d"
-        Title="Lê Trần Bảo Duy-SE182424-MainWindow-Product Management" Height="670" Width="710">
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen"
+        Title="LeTranBaoDuy-SE182424-Product Management" Height="670" Width="710">
     <Grid>
         <Grid>
             <Grid.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#0099FF" Offset="0.086"/>
-                    <GradientStop Color="#FF347BDA" Offset="0.757"/>
-                    <GradientStop Color="#FF60B1E7" Offset="0.952"/>
-                    <GradientStop Color="#FF596FDD" Offset="0.336"/>
-                    <GradientStop Color="#FFAAA2E0" Offset="0.531"/>
+                    <GradientStop Color="#0099FF" Offset="0"/>
+                    <GradientStop Color="#FF347BDA" Offset="0.794"/>
+                    <GradientStop Color="#FF60B1E7" Offset="1"/>
+                    <GradientStop Color="#FF596FDD" Offset="0.309"/>
+                    <GradientStop Color="#FF472FDE" Offset="0.484"/>
                 </LinearGradientBrush>
             </Grid.Background>
             <Grid.RowDefinitions>
@@ -27,28 +29,49 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="119.415"/>
                 <ColumnDefinition Width="30.585"/>
                 <ColumnDefinition Width="47*"/>
                 <ColumnDefinition Width="513*"/>
             </Grid.ColumnDefinitions>
+
             <Label x:Name="label" Content="Product Management" Grid.Column="2" Grid.Row="0" FontSize="36" Grid.ColumnSpan="2" HorizontalAlignment="Center" Width="466"/>
-            <Label Content="Product ID" HorizontalAlignment="Left" Height="30" Grid.Row="1" VerticalAlignment="Center" Width="86" FontSize="13"/>
-            <Label Content="Category" HorizontalAlignment="Left" Height="30" Grid.Row="5" VerticalAlignment="Center" Width="109" FontSize="13"/>
-            <Label Content="Product Name" HorizontalAlignment="Left" Height="30" Grid.Row="2" VerticalAlignment="Center" Width="109" FontSize="15"/>
-            <Label Content="Price" HorizontalAlignment="Left" Height="30" Grid.Row="3" VerticalAlignment="Center" Width="86" FontSize="13"/>
-            <Label Content="Units In Stock" HorizontalAlignment="Left" Height="30" Grid.Row="4" VerticalAlignment="Center" Width="109" FontSize="15"/>
-            <TextBox x:Name="txtProductID" Grid.Column="2" HorizontalAlignment="Left" Height="20" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="560" FontSize="13" Grid.ColumnSpan="2"/>
-            <TextBox x:Name="txtProductName" Grid.Column="2" HorizontalAlignment="Left" Height="20" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="560" Grid.ColumnSpan="2"/>
-            <TextBox x:Name="txtPrice" Grid.Column="2" HorizontalAlignment="Left" Height="20" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="560" FontSize="13" Grid.ColumnSpan="2"/>
-            <TextBox x:Name="txtUnitsInStock" Grid.Column="2" HorizontalAlignment="Left" Height="20" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="560" FontSize="13" Grid.ColumnSpan="2"/>
-            <ComboBox x:Name="cboCategory" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Center" Width="560"/>
-            <DataGrid x:Name="dgData" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" Margin ="29,0,10,67" SelectionChanged="dgData_SelectionChanged"/>
-            <Button  x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="29,365,0,17" Grid.Row="6" Width="121"  Background="#FF0099FF" BorderBrush="White" Foreground="White" Grid.ColumnSpan="3" Grid.Column="1" Click="btnCreate_Click"/>
-            <Button x:Name="btnUpdate" Content="Update" Grid.Column="3" HorizontalAlignment="Left" Margin="92,365,0,17" Grid.Row="6" Width="118" Background="#FF39C855" Foreground="White" RenderTransformOrigin="0.37,0.2" Click="btnUpdate_Click"/>
-            <Button x:Name="btnDelete" Content="Delete" Grid.Column="3" HorizontalAlignment="Left" Margin="233,365,0,17" Grid.Row="6" Width="127" Foreground="White" Background="#FF9F3DAA" Click="btnDelete_Click"/>
-            <Button x:Name="btnClose" Content="Close" Grid.Column="3" HorizontalAlignment="Left" Margin="383,365,0,17" Grid.Row="6" Width="120" Background="#FFFF0707" Foreground="White" Click="btnClose_Click"/>
+
+            <Label x:Name="label1" Margin ="2,2,2,2"  Content="Product ID" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtProductID" Margin ="4,4,4,4" Grid.Column="2" Grid.Row="1" Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" IsEnabled="False" />
+
+            <Label x:Name="label2" Margin ="2,2,2,2" Grid.Column="0" Grid.Row="2" Content="Product Name" Grid.ColumnSpan="2" />
+            <TextBox x:Name="txtProductName" Margin ="4,4,4,4" Grid.Column="2" Grid.Row="2" Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" />
+
+            <Label x:Name="label8" Margin ="2,2,2,2" Content="Price" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtPrice"  Margin ="4,4,4,4" Grid.Column="2" Grid.Row="3" Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" />
+
+            <Label x:Name="label3" Margin ="2,2,2,2" Content="Units In Stock" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtUnitsInStock" Margin ="4,4,4,4"  Grid.Column="2" Grid.Row="4"  Text="" TextWrapping="Wrap" Grid.ColumnSpan="2" />
+
+            <Label x:Name="label4" Margin ="2,2,2,2" Content="Category" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
+            <ComboBox x:Name="cboCategory" Margin ="4,4,4,4" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" />
+
+            <DataGrid x:Name="dgData" AutoGenerateColumns="False"
+          Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2"
+          Margin="4,4,4,63"
+          SelectionChanged="dgData_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ProductId" Binding="{Binding ProductId}" Width="*" />
+                    <DataGridTextColumn Header="ProductName" Binding="{Binding ProductName}" Width="*"/>
+                    <DataGridTextColumn Header="CategoryId" Binding="{Binding CategoryId}" Width="*"/>
+                    <DataGridTextColumn Header="UnitsInStock" Binding="{Binding UnitsInStock}" Width="*"/>
+                    <DataGridTextColumn Header="UnitPrice" Binding="{Binding UnitPrice}" Width="*"/>
+                    <DataGridTextColumn Header="Category" Binding="{Binding Category.CategoryName}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button  x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="29,365,0,16" Grid.Row="6" Grid.RowSpan="2" Width="121"  Background="#FF0099FF" BorderBrush="White" Foreground="White" Grid.ColumnSpan="3" Grid.Column="1" Click="btnCreate_Click"/>
+            <Button x:Name="btnUpdate" Content="Update" Grid.Column="3" HorizontalAlignment="Left" Margin="87,365,0,16" Grid.Row="6" Width="118" Background="#FF1B7140" Foreground="White" Grid.RowSpan="2" RenderTransformOrigin="0.37,0.2" Click="btnUpdate_Click"/>
+            <Button x:Name="btnDelete" Content="Delete" Grid.Column="3" HorizontalAlignment="Left" Margin="221,365,0,16" Grid.Row="6" Grid.RowSpan="2" Width="127" Foreground="White" Background="#FFA2AA3D" Click="btnDelete_Click"/>
+
+            <Button x:Name="btnClose" Content="Close" Grid.Column="3" HorizontalAlignment="Left" Margin="371,365,0,18" Grid.Row="6" Grid.RowSpan="2" Width="120" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
         </Grid>
     </Grid>
 </Window>

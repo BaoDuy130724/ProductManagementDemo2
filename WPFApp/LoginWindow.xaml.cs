@@ -34,6 +34,12 @@ namespace WPFApp
             if(account != null && account.MemberPassword.Equals(txtPass.Password) && account.MemberRole==1)
             {
                 this.Hide();
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("You are not permission");
             }
         }
 
